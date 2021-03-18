@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <container class="setup-container">
+      <div class="name-request">
+        <h3 class="name-request-text">Fo' Shizzle My Quizzle!</h3>
+      </div>
+      <div class="name-input">
+        <div>Player 1 Enter Name:</div>
+        <div><input type="text" class="player1-input text-field" /></div>
+      </div>
+      <div class="name-input">
+        <div>Player 2 Enter Name:</div>
+        <div><input type="text" class="player2-input text-field" /></div>
+      </div>
+      <div class="play-button button">
+        <span class="play button-text">Play!</span>
+      </div>
+    </container>
+    <container class="game-container hidden">
+      <div class="top-div">
+        <span class="scores">
+          <div class="player1-score score">score1</div>
+          <div class="player2-score score">score2</div>
+        </span>
+      </div>
+
+      <div class="question">Get Ready to Play!</div>
+      <section class="answers-container">
+        <span class="answer answer1">1</span>
+        <span class="answer answer2">2</span>
+        <span class="answer answer3">3</span>
+        <span class="answer answer4">4</span>
+      </section>
+    </container>
+    <div class="modal hidden">
+      <div class="modal-content modal-winner hidden">
+        <div class="winner-text"></div>
+        <div class="button replay-button">
+          <span class="button-text">Replay?</span>
+        </div>
+      </div>
+      <div class="modal-content modal-result hidden">
+        <div class="result-text">correct!</div>
+        <div class="next-question">Next Question</div>
+      </div>
+      <div class="modal-content modal-questions">
+        <h1 class="subject-choice-player">Player</h1>
+        <div class="choices">
+          <span class="subject-choice-1 subject-choice">choice1</span>
+          <span class="subject-choice-2 subject-choice">choice2</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
